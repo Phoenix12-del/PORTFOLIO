@@ -88,7 +88,7 @@ const C = {
   email:    "jamadarirfan9000@gmail.com",
   phone:    "+918100254867",
   //location: "India,West Bengal",//
-  github:   "https://github.com/YOUR-USERNAME"
+  github:   "https://github.com/Phoenix12-del"
 },
 };
 /* ═══════════════════════════════════════════════════════════════ */
