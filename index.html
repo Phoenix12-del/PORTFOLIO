@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cyber">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <div class="cursor-glow"></div>
+<div id="theme-fade"></div>
+<!-- 🔥 VANTA WRAPPER -->
+<div id="vanta-bg"></div>
+<div class="bg-overlay"></div>
+
+<div class="main-content">
+
+<!-- ═══ NAV ═══ -->
+<nav>
+  <div class="nav-logo" id="nav-logo">AC</div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact" class="nav-cta">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ═══ HERO ═══ -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-inner">
+    <div>
+      <div class="hero-badge ai">Welcome to my universe</div>
+      <h1 class="hero-title ai d1">Crafting<br><span class="hl" id="hero-hl">Digital</span><br>Masterpieces</h1>
+      <p class="hero-sub ai d2">
+        I'm <strong id="hero-name">MD.IRFAN</strong>, a professional
+        <span id="hero-role">Full-Stack Developer</span> dedicated to building
+        high-performance, user-centric web applications.
+      </p>
+      <div class="hero-btns ai d3">
+        <a href="#contact" class="btn-p">Let's Collaborate</a>
+        <a href="#" class="btn-s" id="resume-link">Get Resume ↗</a>
+      </div>
+    </div>
+    <div class="ai d4">
+      <div class="code-card">
+        <div class="code-hdr">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <span class="fname">Portfolio.ts</span>
+        </div>
+        <div class="code-body" id="code-body"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ ABOUT ═══ -->
+<section id="about">
+  <div class="si">
+    <div class="s-lbl">Discovery</div>
+    <h2 class="s-ttl">About The Architect</h2>
+    <div class="s-div"></div>
+    <div class="about-g">
+      <div class="about-text">
+        <div id="about-bio"></div>
+        <div class="stats" id="about-stats"></div>
+      </div>
+      <div class="about-vis">
+        <div class="avatar-wrap">
+          <img src="myphoto.jpg" class="avatar">
+          <a href="mailto:jamadarirfan9000@gmail.com" class="badge">Available for Work</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ EXPERIENCE ═══ -->
+<section id="experience">
+  <div class="si">
+    <div class="s-lbl">Professional Journey</div>
+    <h2 class="s-ttl">Work Experience</h2>
+    <div class="s-div"></div>
+    <div class="timeline" id="timeline"></div>
+  </div>
+</section>
+
+<!-- ═══ SKILLS ═══ -->
+<section id="skills">
+  <div class="si">
+    <div class="s-lbl">Inventory</div>
+    <h2 class="s-ttl">The Tech Stack</h2>
+    <div class="s-div"></div>
+    <div class="sk-grid" id="sk-grid"></div>
+  </div>
+</section>
+
+<!-- ═══ PROJECTS ═══ -->
+<section id="projects">
+  <div class="si">
+    <div class="s-lbl">Portfolio</div>
+    <h2 class="s-ttl">Featured Creations</h2>
+    <div class="s-div"></div>
+    <div class="proj-g" id="proj-g"></div>
+  </div>
+</section>
+
+<!-- ═══ CONTACT ═══ -->
+<section id="contact">
+  <div class="si">
+    <div class="s-lbl">Communication</div>
+    <h2 class="s-ttl">Let's Connect</h2>
+    <div class="s-div"></div>
+    <div class="cnt-g">
+      <div class="cnt-info">
+        <h3>Have a project in mind?</h3>
+        <p>I'm always open to discussing new opportunities and creative ideas. I'll get back to you within 24 hours.</p>
+        <div id="cnt-details"></div>
+      </div>
+      <form class="cnt-form" onsubmit="handleForm(event)">
+        <div class="fg"><label class="flbl">Your Name</label><input class="finput" type="text" required></div>
+        <div class="fg"><label class="flbl">Email</label><input class="finput" type="email" required></div>
+        <div class="fg"><label class="flbl">Message</label><textarea class="ftarea" required></textarea></div>
+        <button class="fsub" type="submit">Send Message →</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <div><span class="ft-brand" id="ft-name">Portfolio</span> — Built with ❤️</div>
+  <div id="ft-year"></div>
+</footer>
+
+<!-- ═══ THEME SWITCHER ═══ -->
+<button class="tsw-btn" id="tsw-btn">🎨</button>
+<div class="tsw-panel" id="tsw-panel">
+  <div class="tp-hdr">Choose Theme</div>
+  <div class="tp-opts">
+    <div>
+      <div class="tsw on" data-t="cyber"></div>
+      <div class="tn">Cyber</div>
+    </div>
+    <div>
+      <div class="tsw" data-t="violet"></div>
+      <div class="tn">Violet</div>
+    </div>
+    <div>
+      <div class="tsw" data-t="solar"></div>
+      <div class="tn">Solar</div>
+    </div>
+    <div>
+      <div class="tsw" data-t="arctic"></div>
+      <div class="tn">Arctic</div>
+    </div>
+    <div>
+      <div class="tsw" data-t="rose"></div>
+      <div class="tn">Rose</div>
+    </div>
+  </div>
+</div>
+
+<!-- 🔥 IMPORTANT: SCRIPT ORDER FIX -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+<script src="script.js"></script>
+
+</div> <!-- main-content -->
+</body>
+</html>
