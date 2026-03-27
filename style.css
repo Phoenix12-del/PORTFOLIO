@@ -1174,6 +1174,8 @@ html, body {
 ================================= */
 .btn-p:active,
 .btn-s:active,
+
+
 .social-icon:active {
   transform: scale(0.96);
 }
